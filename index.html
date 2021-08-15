@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="main">
+        <h1>A Calculator</h1>
+        <p>No less, no more</p>
+        <div class='output'>
+            <p class="has-right-text" id='equation'>123 + 1</p>
+            <p class="has-right-text" id='result'>124</p>
+            <p></p>
+        </div>
+        <!-- Buttons-->
+        <div class='row'>
+            <div class="col-6">
+                <button class="btn" id='clear'>CLEAR</button>
+            </div>
+            <div class="col-6">
+                <button class="btn" id='delete'>DELETE</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn" data-number>7</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-number>8</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-number>9</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-operator>/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn" data-number>4</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-number>5</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-number>6</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-operator>*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn" data-number>1</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-number>2</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-number>3</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-operator>-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn">.</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-number>0</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-equal>=</button>
+            </div>
+            <div class="col-3">
+                <button class="btn" data-operator>+</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
