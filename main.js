@@ -2,6 +2,7 @@
 const numberButtons = document.querySelectorAll('[data-number]');
 const operatorButtons = document.querySelectorAll('[data-operator]');
 const equalButton = document.querySelector('[data-equal]');
+const pointButton = document.querySelector('[data-point]');
 const equation = document.querySelector('#equation');
 const result = document.querySelector('#result');
 const clearButton = document.querySelector('#clear');
@@ -57,6 +58,9 @@ numberButtons.forEach((button) => {
 })
 
 clearButton.addEventListener('click', (e)=>{
+    firstOperand = 0;
+    secondOperand = 0;
+    operator = null;
     equation.textContent = '';
     result.textContent = 0;
 })
@@ -77,10 +81,15 @@ operatorButtons.forEach((button) => {
 equalButton.addEventListener('click', (e) => {
     
     secondOperand = Number(result.textContent);
-    console.log(secondOperand);
-    //if (secondOperand = )
 
     equation.textContent = firstOperand + operator + secondOperand;
-    result.textContent = operate(operator, firstOperand, secondOperand);
-    operator = null;
+    result.textContent = operate(operator, firstOperand, secondOperand).toFixed(2);
+    firstOperand = Number(result.textContent);
+
+})
+
+pointButton.addEventListener('click', (e) => {
+    if(result.textContent.indexOf('.') == -1){
+        result.textContent += '.';
+    }
 })
