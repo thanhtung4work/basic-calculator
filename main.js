@@ -17,7 +17,7 @@ add = (number_1, number_2) => {
 }
 
 subtract = (number_1, number_2) => {
-    return number_1 + number_2;
+    return number_1 - number_2;
 }
 
 multiply = (number_1, number_2) => {
